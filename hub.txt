@@ -1,0 +1,5 @@
+hub EPIC_manifest
+shortLabel EPIC Manifest
+longLabel Illumina EPIC array probes (hg38)
+genomesFile genomes.txt
+email dav12id3@gmail.com
