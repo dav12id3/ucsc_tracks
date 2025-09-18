@@ -36,7 +36,7 @@ parent betaOverlay
 shortLabel Ctrl_22
 longLabel Sample 1 β
 type bigWig
-bigDataUrl bw/Ctrl_22.beta.bw
+bigDataUrl bw/Ctrl22.beta.bw
 color 0,120,220
 
 track Expr
@@ -44,6 +44,6 @@ parent betaOverlay
 shortLabel Expr_54
 longLabel Sample 2 β
 type bigWig
-bigDataUrl bw/Expr_54.beta.bw
+bigDataUrl bw/Expr54.beta.bw
 color 220,80,80
 
