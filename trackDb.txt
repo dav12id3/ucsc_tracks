@@ -6,3 +6,12 @@ bigDataUrl EPIC_manifest.bb
 visibility pack
 priority 1
 itemRgb off
+
+track E034_K27ac
+shortLabel E034 K27ac
+longLabel Roadmap E034 — 18-state core (hg38-lift) K27ac dense
+type bigBed 9
+bigDataUrl E034_18_core_K27ac_hg38lift_dense.bb
+itemRgb on
+visibility dense
+priority 4
