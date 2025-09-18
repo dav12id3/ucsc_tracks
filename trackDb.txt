@@ -15,3 +15,35 @@ bigDataUrl E034_18_core_K27ac_hg38lift_dense.bb
 itemRgb on
 visibility dense
 priority 4
+
+track betaOverlay
+type bigWig
+container multiWig
+shortLabel β-values
+longLabel Methylation β (0–1), overlay
+aggregate transparentOverlay
+showSubtracks on
+alwaysZero on
+autoScale off
+viewLimits 0:1
+yLineMark 0.5
+yLineOnOff on
+maxHeightPixels 64:32:16
+priority 30
+
+track Ctrl
+parent betaOverlay
+shortLabel Ctrl_22
+longLabel Sample 1 β
+type bigWig
+bigDataUrl bw/Ctrl_22.beta.bw
+color 0,120,220
+
+track Expr
+parent betaOverlay
+shortLabel Expr_54
+longLabel Sample 2 β
+type bigWig
+bigDataUrl bw/Expr_54.beta.bw
+color 220,80,80
+
