@@ -109,12 +109,14 @@ lineWidth 2
 visibility full
 color 60,100,220
 
-track DeltaBeta
-shortLabel Δβ (Expr−Ctrl)
-longLabel Beta difference (Expr − Ctrl)
+track DeltaBetaSet
 type bigWig
-bigDataUrl bw/DeltaBeta.ExprMinusCtrl.bw
-visibility full
+container multiWig
+shortLabel Δβ
+longLabel Beta difference (Expr − Ctrl)
+color 0,0,0                
+aggregate transparentOverlay
+showSubtracks on
 alwaysZero on
 autoScale off
 viewLimits -0.30:0.30
@@ -122,9 +124,24 @@ yLineMark 0
 yLineOnOff on
 graphType bar
 smoothingWindow off
-lineWidth 2
-color 200,60,60       
-negBarColor 60,100,220
-labelColor 0,0,0 
 priority 60
 
+track DeltaBeta_pos
+parent DeltaBetaSet
+shortLabel Δβ+
+longLabel Positive (Expr > Ctrl)
+type bigWig
+bigDataUrl bw/DeltaBeta.pos.bw
+graphType bar
+smoothingWindow off
+color 200,60,60            
+
+track DeltaBeta_neg
+parent DeltaBetaSet
+shortLabel Δβ−
+longLabel Negative (Ctrl > Expr)
+type bigWig
+bigDataUrl bw/DeltaBeta.neg.bw
+graphType bar
+smoothingWindow off
+color 60,100,220           
