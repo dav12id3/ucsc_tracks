@@ -125,5 +125,6 @@ smoothingWindow off
 lineWidth 2
 color 200,60,60       
 negBarColor 60,100,220
+labelColor 0,0,0 
 priority 60
 
