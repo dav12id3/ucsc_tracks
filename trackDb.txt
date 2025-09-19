@@ -51,7 +51,7 @@ parent Ctrl22_parts
 shortLabel β
 longLabel Ctrl22 β (methylated fraction)
 type bigWig
-bigDataUrl bw/Ctrl22.beta.bw
+bigDataUrl bw/Ctrl22.beta.w10.bw
 graphType bar
 smoothingWindow off
 lineWidth 2
@@ -63,7 +63,7 @@ parent Ctrl22_parts
 shortLabel 1−β
 longLabel Ctrl22 1−β (unmethylated fraction)
 type bigWig
-bigDataUrl bw/Ctrl22.beta.unmeth.bw
+bigDataUrl bw/Ctrl22.beta.unmeth.w10.bw
 graphType bar
 smoothingWindow off
 lineWidth 2
@@ -90,7 +90,7 @@ parent Expr54_parts
 shortLabel β
 longLabel Expr54 β (methylated fraction)
 type bigWig
-bigDataUrl bw/Expr54.beta.bw
+bigDataUrl bw/Expr54.beta.w10.bw
 graphType bar
 smoothingWindow off
 lineWidth 2
@@ -102,7 +102,7 @@ parent Expr54_parts
 shortLabel 1−β
 longLabel Expr54 2 1−β (unmethylated fraction)
 type bigWig
-bigDataUrl bw/Expr54.beta.unmeth.bw
+bigDataUrl bw/Expr54.beta.unmeth.w10.bw
 graphType bar
 smoothingWindow off
 lineWidth 2
