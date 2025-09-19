@@ -32,41 +32,25 @@ maxHeightPixels 64:32:16
 priority 30
 visibility hide
 
-track Ctrl
-parent betaOverlay
-shortLabel Ctrl_22
-longLabel Sample 1 β
-type bigWig
-bigDataUrl bw/Ctrl22.beta.bw
-color 0,120,220
-
-track Expr
-parent betaOverlay
-shortLabel Expr_54
-longLabel Sample 2 β
-type bigWig
-bigDataUrl bw/Expr54.beta.bw
-color 220,80,80
-
 track Ctrl22_parts
 type bigWig
 container multiWig
 aggregate stacked
+graphType bar
 shortLabel Ctrl22 β parts
 longLabel Sample 1 methylation: β (red) + 1−β (blue), stacked
 showSubtracks on
 alwaysZero on
 autoScale off
 viewLimits 0:1
-graphType bars
 lineWidth 2
-maxHeightPixels 50:40:25
+maxHeightPixels 70:60:40
 priority 50
 
 track Ctrl22_beta
 parent Ctrl22_parts
 shortLabel β
-longLabel Sample 1 β (methylated fraction)
+longLabel Ctrl22 β (methylated fraction)
 type bigWig
 bigDataUrl bw/Ctrl22.beta.bw
 color 200,60,60
@@ -83,21 +67,21 @@ track Expr54_parts
 type bigWig
 container multiWig
 aggregate stacked
+graphType bars
 shortLabel Expr54 β parts
-longLabel Sample 2 methylation: β (red) + 1−β (blue), stacked
+longLabel Expr54 methylation: β (red) + 1−β (blue), stacked
 showSubtracks on
 alwaysZero on
 autoScale off
 viewLimits 0:1
-graphType bars
 lineWidth 2
-maxHeightPixels 50:40:25
+maxHeightPixels 70:60:40
 priority 51
 
 track Expr54_beta
 parent Expr54_parts
 shortLabel β
-longLabel Sample 2 β (methylated fraction)
+longLabel Expr54 β (methylated fraction)
 type bigWig
 bigDataUrl bw/Expr54.beta.bw
 color 200,60,60
@@ -105,7 +89,7 @@ color 200,60,60
 track Expr54_unmeth
 parent Expr54_parts
 shortLabel 1−β
-longLabel Sample 2 1−β (unmethylated fraction)
+longLabel Expr54 2 1−β (unmethylated fraction)
 type bigWig
 bigDataUrl bw/Expr54.beta.unmeth.bw
 color 60,100,220
