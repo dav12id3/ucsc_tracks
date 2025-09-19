@@ -109,3 +109,21 @@ lineWidth 2
 visibility full
 color 60,100,220
 
+track DeltaBeta
+shortLabel Δβ (Expr−Ctrl)
+longLabel Beta difference (Expr − Ctrl)
+type bigWig
+bigDataUrl bw/DeltaBeta.ExprMinusCtrl.bw
+visibility full
+alwaysZero on
+autoScale off
+viewLimits -0.30:0.30
+yLineMark 0
+yLineOnOff on
+graphType bar
+smoothingWindow off
+lineWidth 2
+color 200,60,60        # positive (Expr>Ctrl)
+negBarColor 60,100,220 # negative (Ctrl>Expr)
+priority 60
+
