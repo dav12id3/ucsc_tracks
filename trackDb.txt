@@ -16,22 +16,6 @@ itemRgb on
 visibility dense
 priority 4
 
-track betaOverlay
-type bigWig
-container multiWig
-shortLabel β-values
-longLabel Methylation β (0–1), overlay
-aggregate transparentOverlay
-showSubtracks on
-alwaysZero on
-autoScale off
-viewLimits 0:1
-yLineMark 0.5
-yLineOnOff on
-maxHeightPixels 64:32:16
-priority 30
-visibility hide
-
 track Ctrl22_parts
 type bigWig
 container multiWig
@@ -46,7 +30,7 @@ lineWidth 2
 maxHeightPixels 70:60:40
 priority 50
 
-track Ctrl22_beta
+track Ctrl22_meth
 parent Ctrl22_parts
 shortLabel β
 longLabel Ctrl22 β (methylated fraction)
@@ -64,6 +48,44 @@ shortLabel 1−β
 longLabel Ctrl22 1−β (unmethylated fraction)
 type bigWig
 bigDataUrl bw/Ctrl22.beta.unmeth.bw
+graphType bar
+smoothingWindow off
+lineWidth 2
+visibility full
+color 60,100,220
+
+track Ctrl_AVG_parts
+type bigWig
+container multiWig
+aggregate stacked
+shortLabel Ctrl_AVG β parts
+longLabel Ctrl_AVG methylation: β (red) + 1−β (blue), stacked
+showSubtracks on
+alwaysZero on
+autoScale off
+viewLimits 0:1.02
+lineWidth 2
+maxHeightPixels 70:60:40
+priority 50
+
+track Ctrl_AVG_meth
+parent Ctrl_AVG_parts
+shortLabel β
+longLabel Ctrl_AVG β (methylated fraction)
+type bigWig
+bigDataUrl bw/Ctrl_AVG.beta.bw
+graphType bar
+smoothingWindow off
+lineWidth 2
+visibility full
+color 200,60,60
+
+track Ctrl_AVG_unmeth
+parent Ctrl_AVG_parts
+shortLabel 1−β
+longLabel Ctrl_AVG 1−β (unmethylated fraction)
+type bigWig
+bigDataUrl bw/Ctrl_AVG.beta.unmeth.bw
 graphType bar
 smoothingWindow off
 lineWidth 2
@@ -100,9 +122,48 @@ color 200,60,60
 track Expr54_unmeth
 parent Expr54_parts
 shortLabel 1−β
-longLabel Expr54 2 1−β (unmethylated fraction)
+longLabel Expr54 1−β (unmethylated fraction)
 type bigWig
 bigDataUrl bw/Expr54.beta.unmeth.bw
+graphType bar
+smoothingWindow off
+lineWidth 2
+visibility full
+color 60,100,220
+
+track Expr_AVG_parts
+type bigWig
+container multiWig
+aggregate stacked
+graphType bars
+shortLabel Expr_AVG β parts
+longLabel Expr_AVG methylation: β (red) + 1−β (blue), stacked
+showSubtracks on
+alwaysZero on
+autoScale off
+viewLimits 0:1.02
+lineWidth 2
+maxHeightPixels 70:60:40
+priority 51
+
+track Expr_AVG_meth
+parent Expr_AVG_parts
+shortLabel β
+longLabel Expr_AVG β (methylated fraction)
+type bigWig
+bigDataUrl bw/Expr_AVG.beta.bw
+graphType bar
+smoothingWindow off
+lineWidth 2
+visibility full
+color 200,60,60
+
+track Expr_AVG_unmeth
+parent Expr_AVG_parts
+shortLabel 1−β
+longLabel Expr_AVG 1−β (unmethylated fraction)
+type bigWig
+bigDataUrl bw/Expr_AVG.beta.unmeth.bw
 graphType bar
 smoothingWindow off
 lineWidth 2
@@ -142,6 +203,43 @@ shortLabel Δβ−
 longLabel Negative (Ctrl > Expr)
 type bigWig
 bigDataUrl bw/DeltaBeta.neg.bw
+graphType bar
+smoothingWindow off
+color 60,100,220           
+
+track DeltaBetaSet_AVG
+type bigWig
+container multiWig
+shortLabel Δβ
+longLabel Beta difference (Expr − Ctrl)
+color 0,0,0                
+aggregate transparentOverlay
+showSubtracks on
+alwaysZero on
+autoScale off
+viewLimits -0.30:0.30
+yLineMark 0
+yLineOnOff on
+graphType bar
+smoothingWindow off
+priority 60
+
+track DeltaBeta_AVG_pos
+parent DeltaBetaSet_AVG
+shortLabel Δβ+
+longLabel Positive (Expr > Ctrl)
+type bigWig
+bigDataUrl bw/DeltaBeta_AVG.pos.bw
+graphType bar
+smoothingWindow off
+color 200,60,60            
+
+track DeltaBeta_AVG_neg
+parent DeltaBetaSet_AVG
+shortLabel Δβ−
+longLabel Negative (Ctrl > Expr)
+type bigWig
+bigDataUrl bw/DeltaBeta_AVG.neg.bw
 graphType bar
 smoothingWindow off
 color 60,100,220           
