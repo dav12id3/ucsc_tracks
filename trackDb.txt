@@ -173,8 +173,8 @@ color 60,100,220
 track DeltaBetaSet
 type bigWig
 container multiWig
-shortLabel Δβ
-longLabel Beta difference (Expr − Ctrl)
+shortLabel Δβ (Expr54 - Ctrl22)
+longLabel Beta difference (Expr54 - Ctrl22)
 color 0,0,0                
 aggregate transparentOverlay
 showSubtracks on
@@ -210,7 +210,7 @@ color 60,100,220
 track DeltaBetaSet_AVG
 type bigWig
 container multiWig
-shortLabel Δβ
+shortLabel Δβ (AVG)
 longLabel Beta difference (Expr − Ctrl)
 color 0,0,0                
 aggregate transparentOverlay
