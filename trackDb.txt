@@ -180,7 +180,7 @@ aggregate transparentOverlay
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits -0.30:0.30
+viewLimits -0.10:0.10
 yLineMark 0
 yLineOnOff on
 graphType bar
@@ -217,7 +217,7 @@ aggregate transparentOverlay
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits -0.30:0.30
+viewLimits -0.10:0.10
 yLineMark 0
 yLineOnOff on
 graphType bar
