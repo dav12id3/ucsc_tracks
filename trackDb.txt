@@ -242,4 +242,110 @@ type bigWig
 bigDataUrl bw/DeltaBeta_AVG.neg.bw
 graphType bar
 smoothingWindow off
-color 60,100,220           
+color 60,100,220  
+
+# === CTRL_AVG_ZHANG: stacked β + 1−β ===
+track CTRL_ZHANG_parts
+type bigWig
+container multiWig
+aggregate stacked
+shortLabel CTRL_AVG_Z
+longLabel CTRL_AVG_ZHANG methylation: β (red) + 1−β (blue)
+showSubtracks on
+alwaysZero on
+autoScale off
+viewLimits 0:1.02
+lineWidth 2
+maxHeightPixels 70:60:40
+priority 80
+
+track CTRL_ZHANG_beta
+parent CTRL_ZHANG_parts
+shortLabel β
+type bigWig
+bigDataUrl bw/CTRL_ZHANG.beta.bw
+graphType bar
+smoothingWindow off
+color 200,60,60
+
+track CTRL_ZHANG_unmeth
+parent CTRL_ZHANG_parts
+shortLabel 1−β
+type bigWig
+bigDataUrl bw/CTRL_ZHANG.unmeth.bw
+graphType bar
+smoothingWindow off
+color 60,100,220
+
+# === CANCER_AVG_ZHANG: stacked β + 1−β ===
+track CANCER_ZHANG_parts
+type bigWig
+container multiWig
+aggregate stacked
+shortLabel CANCER_AVG_Z
+longLabel CANCER_AVG_ZHANG methylation: β (red) + 1−β (blue)
+showSubtracks on
+alwaysZero on
+autoScale off
+viewLimits 0:1.02
+lineWidth 2
+maxHeightPixels 70:60:40
+priority 81
+
+track CANCER_ZHANG_beta
+parent CANCER_ZHANG_parts
+shortLabel β
+type bigWig
+bigDataUrl bw/CANCER_ZHANG.beta.bw
+graphType bar
+smoothingWindow off
+color 200,60,60
+
+track CANCER_ZHANG_unmeth
+parent CANCER_ZHANG_parts
+shortLabel 1−β
+type bigWig
+bigDataUrl bw/CANCER_ZHANG.unmeth.bw
+graphType bar
+smoothingWindow off
+color 60,100,220
+
+# === Δβ_ZHANG container: (CANCER − CTRL): red up / blue down ===
+track DeltaBeta_ZHANG
+type bigWig
+container multiWig
+shortLabel Δβ_Z
+longLabel Beta difference (CANCER − CTRL)
+color 0,0,0
+aggregate transparentOverlay
+showSubtracks on
+alwaysZero on
+autoScale off
+viewLimits -0.10:0.10
+yLineMark 0
+yLineOnOff on
+graphType bar
+smoothingWindow off
+maxHeightPixels 64:48:32
+priority 82
+
+track DeltaBeta_ZHANG_pos
+parent DeltaBeta_ZHANG
+shortLabel Δβ+
+longLabel Positive Δβ (CANCER > CTRL)
+type bigWig
+bigDataUrl bw/DeltaBeta_ZHANG.pos.bw
+graphType bar
+smoothingWindow off
+color 200,60,60
+
+track DeltaBeta_ZHANG_neg
+parent DeltaBeta_ZHANG
+shortLabel Δβ−
+longLabel Negative Δβ (CTRL > CANCER)
+type bigWig
+bigDataUrl bw/DeltaBeta_ZHANG.neg.bw
+graphType bar
+smoothingWindow off
+color 60,100,220
+     
