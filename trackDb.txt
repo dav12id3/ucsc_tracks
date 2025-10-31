@@ -63,7 +63,7 @@ longLabel Ctrl_AVG methylation: β (red) + 1−β (blue), stacked
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:1.02
+viewLimits 0:0.5
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 50
@@ -78,7 +78,7 @@ graphType bar
 smoothingWindow off
 lineWidth 2
 visibility full
-color 200,60,60
+color 0,0,0
 
 track Ctrl_AVG_unmeth
 parent Ctrl_AVG
@@ -90,7 +90,7 @@ graphType bar
 smoothingWindow off
 lineWidth 2
 visibility full
-color 60,100,220
+color 255,255,255
 
 track Expr54
 type bigWig
@@ -141,7 +141,7 @@ longLabel Expr_AVG methylation: β (red) + 1−β (blue), stacked
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:1.02
+viewLimits 0:0.5
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 51
@@ -156,7 +156,7 @@ graphType bar
 smoothingWindow off
 lineWidth 2
 visibility full
-color 200,60,60
+color 0,0,0
 
 track Expr_AVG_unmeth
 parent Expr_AVG
@@ -168,7 +168,7 @@ graphType bar
 smoothingWindow off
 lineWidth 2
 visibility full
-color 60,100,220
+color 255,255,255
 
 track DeltaBetaSet
 type bigWig
@@ -287,7 +287,7 @@ longLabel CANCER_AVG_ZHANG methylation: β (red) + 1−β (blue)
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:1.02
+viewLimits 0:0.5
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 81
@@ -299,7 +299,7 @@ type bigWig
 bigDataUrl bw/CANCER_ZHANG.beta.bw
 graphType bar
 smoothingWindow off
-color 200,60,60
+color 0,0,0
 
 track CANCER_ZHANG_unmeth
 parent CANCER_ZHANG_parts
@@ -308,7 +308,7 @@ type bigWig
 bigDataUrl bw/CANCER_ZHANG.unmeth.bw
 graphType bar
 smoothingWindow off
-color 60,100,220
+color 255,255,255
 
 # === Δβ_ZHANG container: (CANCER − CTRL): red up / blue down ===
 track DeltaBeta_ZHANG
