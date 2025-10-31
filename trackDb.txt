@@ -254,7 +254,7 @@ longLabel CTRL_AVG_ZHANG methylation: β (red) + 1−β (blue)
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:1.02
+viewLimits 0:0.52
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 80
@@ -266,7 +266,7 @@ type bigWig
 bigDataUrl bw/CTRL_ZHANG.beta.bw
 graphType bar
 smoothingWindow off
-color 200,60,60
+color 0,0,0
 
 track CTRL_ZHANG_unmeth
 parent CTRL_ZHANG_parts
@@ -275,7 +275,7 @@ type bigWig
 bigDataUrl bw/CTRL_ZHANG.unmeth.bw
 graphType bar
 smoothingWindow off
-color 60,100,220
+color 255,255,255
 
 # === CANCER_AVG_ZHANG: stacked β + 1−β ===
 track CANCER_ZHANG_parts
