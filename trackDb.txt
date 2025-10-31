@@ -63,7 +63,7 @@ longLabel Ctrl_AVG methylation: β (red) + 1−β (blue), stacked
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:0.52
+viewLimits 0:0.5
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 50
@@ -141,7 +141,7 @@ longLabel Expr_AVG methylation: β (red) + 1−β (blue), stacked
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:0.52
+viewLimits 0:0.5
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 51
@@ -254,7 +254,7 @@ longLabel CTRL_AVG_ZHANG methylation: β (red) + 1−β (blue)
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:0.52
+viewLimits 0:0.5
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 80
@@ -287,7 +287,7 @@ longLabel CANCER_AVG_ZHANG methylation: β (red) + 1−β (blue)
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:0.52
+viewLimits 0:0.5
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 81
