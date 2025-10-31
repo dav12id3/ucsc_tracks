@@ -80,17 +80,17 @@ lineWidth 2
 visibility full
 color 0,0,0
 
-track Ctrl_AVG_unmeth
-parent Ctrl_AVG
-shortLabel 1−β
-longLabel Ctrl_AVG 1−β (unmethylated fraction)
-type bigWig
-bigDataUrl bw/Ctrl_AVG.unmeth.bw
-graphType bar
-smoothingWindow off
-lineWidth 2
-visibility full
-color 255,255,255
+# track Ctrl_AVG_unmeth
+# parent Ctrl_AVG
+# shortLabel 1−β
+# longLabel Ctrl_AVG 1−β (unmethylated fraction)
+# type bigWig
+# bigDataUrl bw/Ctrl_AVG.unmeth.bw
+# graphType bar
+# smoothingWindow off
+# lineWidth 2
+# visibility full
+# color 255,255,255
 
 track Expr54
 type bigWig
@@ -158,17 +158,17 @@ lineWidth 2
 visibility full
 color 0,0,0
 
-track Expr_AVG_unmeth
-parent Expr_AVG
-shortLabel 1−β
-longLabel Expr_AVG 1−β (unmethylated fraction)
-type bigWig
-bigDataUrl bw/Expr_AVG.unmeth.bw
-graphType bar
-smoothingWindow off
-lineWidth 2
-visibility full
-color 255,255,255
+# track Expr_AVG_unmeth
+# parent Expr_AVG
+# shortLabel 1−β
+# longLabel Expr_AVG 1−β (unmethylated fraction)
+# type bigWig
+# bigDataUrl bw/Expr_AVG.unmeth.bw
+# graphType bar
+# smoothingWindow off
+# lineWidth 2
+# visibility full
+# color 255,255,255
 
 track DeltaBetaSet
 type bigWig
@@ -268,14 +268,14 @@ graphType bar
 smoothingWindow off
 color 0,0,0
 
-track CTRL_ZHANG_unmeth
-parent CTRL_ZHANG_parts
-shortLabel 1−β
-type bigWig
-bigDataUrl bw/CTRL_ZHANG.unmeth.bw
-graphType bar
-smoothingWindow off
-color 255,255,255
+# track CTRL_ZHANG_unmeth
+# parent CTRL_ZHANG_parts
+# shortLabel 1−β
+# type bigWig
+# bigDataUrl bw/CTRL_ZHANG.unmeth.bw
+# graphType bar
+# smoothingWindow off
+# color 255,255,255
 
 # === CANCER_AVG_ZHANG: stacked β + 1−β ===
 track CANCER_ZHANG_parts
@@ -301,14 +301,14 @@ graphType bar
 smoothingWindow off
 color 0,0,0
 
-track CANCER_ZHANG_unmeth
-parent CANCER_ZHANG_parts
-shortLabel 1−β
-type bigWig
-bigDataUrl bw/CANCER_ZHANG.unmeth.bw
-graphType bar
-smoothingWindow off
-color 255,255,255
+# track CANCER_ZHANG_unmeth
+# parent CANCER_ZHANG_parts
+# shortLabel 1−β
+# type bigWig
+# bigDataUrl bw/CANCER_ZHANG.unmeth.bw
+# graphType bar
+# smoothingWindow off
+# color 255,255,255
 
 # === Δβ_ZHANG container: (CANCER − CTRL): red up / blue down ===
 track DeltaBeta_ZHANG
