@@ -357,7 +357,7 @@ type bigBed 6 +
 bigDataUrl E034_H3K27ac_stitched_enh.hg38.bb
 visibility dense
 priority 90
-color 255,153,153
+color 0,0,0
 
 track E034_stitched_super
 shortLabel E034 super
@@ -367,6 +367,16 @@ bigDataUrl E034_H3K27ac_stitched_super.hg38.bb
 visibility dense
 priority 91
 color 255,0,0
+
+# DMR
+track DMR_20260402
+shortLabel DMR
+longLabel Differentially methylated regions (lifted hg19 to hg38)
+type bigBed 4
+bigDataUrl DMR_20260402.hg38.bb
+visibility pack
+priority 95
+color 0,102,204
 
 
      
