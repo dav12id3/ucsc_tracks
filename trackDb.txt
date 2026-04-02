@@ -353,7 +353,7 @@ color 60,100,220
 track E034_stitched_enh
 shortLabel E034 enh
 longLabel E034 stitched enhancers (lifted hg19 to hg38)
-type bigBed 5
+type bigBed 6 +
 bigDataUrl E034_H3K27ac_stitched_enh.hg38.bb
 visibility dense
 priority 90
@@ -362,7 +362,7 @@ color 255,153,153
 track E034_stitched_super
 shortLabel E034 super
 longLabel E034 stitched super-enhancers (lifted hg19 to hg38)
-type bigBed 5
+type bigBed 6 +
 bigDataUrl E034_H3K27ac_stitched_super.hg38.bb
 visibility dense
 priority 91
