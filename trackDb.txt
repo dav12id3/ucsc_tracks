@@ -63,7 +63,7 @@ longLabel Ctrl_AVG methylation: β (red) + 1−β (blue), stacked
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:0.5
+viewLimits 0:1
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 50
@@ -141,7 +141,7 @@ longLabel Expr_AVG methylation: β (red) + 1−β (blue), stacked
 showSubtracks on
 alwaysZero on
 autoScale off
-viewLimits 0:0.5
+viewLimits 0:1
 lineWidth 2
 maxHeightPixels 70:60:40
 priority 51
