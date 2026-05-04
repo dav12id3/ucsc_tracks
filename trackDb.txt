@@ -378,5 +378,15 @@ visibility pack
 priority 95
 color 0,102,204
 
+# DMP
+track DMP_20260504
+shortLabel DMP
+longLabel Differentially methylated probes (lifted hg19 to hg38)
+type bigBed 4
+bigDataUrl DMP_20260504.hg38.bb
+visibility pack
+priority 96
+color 153,0,153
+
 
      
